@@ -53,9 +53,9 @@ public class BinarySearch {
             URL url = new URL("https://algs4.cs.princeton.edu/11model/tinyAllowlist.txt");
             InputStream stream = url.openStream();
             BufferedInputStream buf = new BufferedInputStream(stream);
-            //实例化StringBuilder类
+            // 实例化StringBuilder类
             StringBuilder sb = new StringBuilder();
-            //循环读取和拼接字符串
+            // 循环读取和拼接字符串
             while (true) {
                 int data = buf.read();
                 if (data == -1) {

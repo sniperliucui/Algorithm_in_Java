@@ -1,6 +1,11 @@
 package Ch1;
 
 public class Euclidean {
+    /**
+     * @param p lager number
+     * @param q smaller number
+     * @return euclidean number of p and q
+     */
     public static int gcd(int p, int q) {
         if (q == 0) return p;
         int r = p % q;
@@ -8,6 +13,10 @@ public class Euclidean {
         return gcd(q, r);
     }
 
+    /**
+     *
+     * @param args insta
+     */
     public static void main(String[] args) {
         int res = gcd(10, 6);
         System.out.println("=========== 执行结果为 ===========");
