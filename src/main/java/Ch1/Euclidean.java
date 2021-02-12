@@ -7,9 +7,11 @@ public class Euclidean {
      * @return euclidean number of p and q
      */
     public static int gcd(int p, int q) {
+        System.out.printf("p=%d\tq=%d\n", p, q);
         if (q == 0) return p;
         int r = p % q;
-        System.out.println("===========>>" + r);
+        // System.out.printf("p=%d\tq=%d\tr=%d\n", p, q, r);
+
         return gcd(q, r);
     }
 
@@ -18,8 +20,8 @@ public class Euclidean {
      * @param args insta
      */
     public static void main(String[] args) {
-        int res = gcd(10, 6);
-        System.out.println("=========== 执行结果为 ===========");
+        int res = gcd(1234567, 1111111);
+        System.out.println("\n=========== 执行结果为 ===========");
         System.out.println(res);
     }
 }
